@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Not found {% endblock %}
+
+{% block body %}
+<div class='row'>
+    <h4 class='display-4 col-12 col-md-6'>Information for this location is currently unavailable.</h4>
+    <div class='col-md-6'></div>
+    <form action='/'>
+        <div class='row'>
+            <div class="col-auto">
+                <input type="submit" value='<< Back' class='display-6 navigate-button'>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

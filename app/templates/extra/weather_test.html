@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        body {
+            min-height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url({{image_path}});
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .container-fluid {
+            height: 100vh;
+            display: flex;
+            color: white;
+        }
+
+        #back-button {
+            color: white;
+            text-decoration: none;
+        }
+
+        #back-button:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        #cap1 {
+            background-color: lightblue;
+        }
+
+        #cap2 {
+            background-color: navajowhite;
+        }
+
+        #cap3 {
+            background-color: lightsalmon;
+        }
+
+        #location-input {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border-radius: 0;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+
+        .navigate-button {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border-radius: 0;
+            border: 0;
+            transition: 0.3s;
+        }
+
+        .navigate-button:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white !important;
+            opacity: 0.8 !important;
+        }
+
+        .form-control-lg::placeholder {
+            color: white !important;
+            opacity: 0.8 !important;
+        }
+
+        input[type=text] {
+            color: white;
+        }
+    </style>
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <!-- Linking external CSS is not working for some reason
+        <link rel="stylesheet" href="./css/styles.css" type="text/css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <title>Weather TEST</title>
+    </head>
+
+    <body>
+        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" class='container-fluid flex-column justify-content-between'>
+            <div class='row'></div>
+
+            <div class='d-flex flex-row justify-content-center'>
+                <div>
+                    <h2 class='display-2'>Location</h2>
+                    
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-4' style='padding: 0'>
+                                <img src='http://openweathermap.org/img/wn/10d@2x.png'>
+                            </div>
+                            <div class='col-8 align-self-center'>
+                                <p class='lead' style='text-align: center'>Para 1</p>
+                                <p class='lead' style='text-align: center'>Para 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='d-flex flex-row justify-content-center''>
+                        <a href='/' class='display-6 navigate-button'><< Back</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='container d-flex justify-content-center'>
+                    <p class='lead blockquote-footer'>Ngoc N. Hoang | 2021</p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

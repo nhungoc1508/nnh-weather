@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<form action='/weather'>
+    <div class="row align-items-baseline">
+        <div class="col-auto">
+            <label for='location-input' class='form-label display-4'>Find weather information for </label>
+        </div>
+        <div class="col-auto">
+            <input type='text' class='form-control form-control-lg input-lg' name='location' id='location-input' placeholder='enter location' required oninvalid="this.setCustomValidity('Please enter a location.')" oninput="setCustomValidity('')"><br>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-auto">
+            <input type="submit" value='>> Search' class='display-6 navigate-button'>
+        </div>
+    </div>
+</form>
+{% endblock %}
